@@ -2,11 +2,7 @@ import java.util.Arrays;
 
 public class q16_Permutation_in_String {
 
-    public static void main(String[] args) {
-        System.out.println(checkInclusion("ab","eidbaooo"));
-    }
-
-    public static boolean checkInclusion(String s1, String s2) {
+    public boolean checkInclusion(String s1, String s2) {
         int[] count = new int[26];
         for (char c: s1.toCharArray()) { count[c-'a']++; }
 
