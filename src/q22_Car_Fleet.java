@@ -2,7 +2,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class q23_Car_Fleet {
+public class q22_Car_Fleet {
 
     public int carFleet(int target, int[] position, int[] speed) {
         Map<Integer, Double> cars = new TreeMap<>(Collections.reverseOrder());
