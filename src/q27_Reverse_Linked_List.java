@@ -1,5 +1,6 @@
 public class q27_Reverse_Linked_List {
 
+    /*
     public ListNode reverseList(ListNode head) {
         ListNode newNodeList = null;
 
@@ -10,4 +11,5 @@ public class q27_Reverse_Linked_List {
             newNodeList.next = temp;
         }
     }
+     */
 }
