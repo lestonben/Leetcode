@@ -19,7 +19,7 @@ public class q07_Remove_Duplicate_Letters {
             if (visited[c-'a']) continue;
 
             while (!stack.isEmpty() && c < stack.peek() && chars[stack.peek()-'a'] != 0) {
-                visited[stack.pop()-'a'] = false;
+                visited[stack.pop()-'a'] = false; //making the stack.peek() out as still having this char exists in chars array
 
             }
             stack.push(c);
