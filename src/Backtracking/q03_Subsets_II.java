@@ -6,7 +6,7 @@ import java.util.*;
     https://leetcode.com/problems/subsets-ii/
  */
 
-public class q_Subsets_II {
+public class q03_Subsets_II {
 
     public static void main(String[] args) {
         System.out.println(subsetsWithDup(new int[]{1,4,4,4}));

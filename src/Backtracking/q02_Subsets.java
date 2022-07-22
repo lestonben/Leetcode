@@ -7,7 +7,7 @@ package Backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
-public class q_Subsets {
+public class q02_Subsets {
 
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> resList = new ArrayList<>();

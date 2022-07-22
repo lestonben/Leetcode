@@ -7,7 +7,7 @@ import java.util.List;
     https://leetcode.com/problems/permutations/
  */
 
-public class q_Permutations_of_Integers {
+public class q04_Permutations {
 
     public static void main(String[] args) {
         System.out.println(permute(new int[]{1,2,3}));

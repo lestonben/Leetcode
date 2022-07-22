@@ -7,7 +7,7 @@ import java.util.List;
     https://leetcode.com/problems/combination-sum/
  */
 
-public class q_Combination_Sum {
+public class q01_Combination_Sum {
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> resList = new ArrayList<>();

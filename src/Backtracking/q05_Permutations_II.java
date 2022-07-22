@@ -8,7 +8,7 @@ import java.util.List;
     https://leetcode.com/problems/permutations-ii/
  */
 
-public class q_Permutations_II {
+public class q05_Permutations_II {
 
     public static void main(String[] args) {
         System.out.println(permuteUnique(new int[]{1,1,2}));
