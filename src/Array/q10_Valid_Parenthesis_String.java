@@ -2,7 +2,7 @@ package Array;/*
     https://leetcode.com/problems/valid-parenthesis-string/
  */
 
-public class q678_Valid_Parenthesis_String {
+public class q10_Valid_Parenthesis_String {
 
     public boolean checkValidString(String s) {
         int cmin = 0, cmax = 0;
