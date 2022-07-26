@@ -1,9 +1,9 @@
-
+package Array;
 /*
      https://leetcode.com/problems/find-pivot-index/
 */
 
-public class q_Find_Pivot_Index {
+public class q12_Find_Pivot_Index {
 
     public static void main(String[] args) {
         System.out.println(pivotIndex(new int[]{1,7,3,6,5,6}));
