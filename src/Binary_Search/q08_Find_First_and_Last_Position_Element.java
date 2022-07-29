@@ -7,32 +7,31 @@ package Binary_Search;
 public class q08_Find_First_and_Last_Position_Element {
 
     public int[] searchRange(int[] nums, int target) {
-        int[] res = new int[2];
-        res[0] = binarySearchFirst(nums, target);
-        res[1] = binarySearchLast(nums, target);
-        return res;
+        return new int[]{searchFirst(nums,target), searchLast(nums,target)};
     }
 
-    public int binarySearchFirst(int[] nums, int target) {
-        int low = 0, high = nums.length-1;
+    public int searchFirst(int[] nums, int target) {
         int res = -1;
+        int low = 0, high = nums.length-1;
         while (low <= high) {
             int mid = (low+high)/2;
             if (nums[mid] == target) { res = mid; }
-            if (nums[mid] < target) { low = mid+1; }
-            else { high = mid-1; }
+
+            if (nums[mid] >= target) { high = mid-1; }
+            else { low = mid+1; }
         }
         return res;
     }
 
-    public int binarySearchLast(int[] nums, int target) {
-        int low = 0, high = nums.length-1;
+    public int searchLast(int[] nums, int target) {
         int res = -1;
+        int low = 0, high = nums.length-1;
         while (low <= high) {
             int mid = (low+high)/2;
             if (nums[mid] == target) { res = mid; }
-            if (nums[mid] > target) { high = mid-1; }
-            else { low = mid+1; }
+
+            if (nums[mid] <= target) { low = mid+1; }
+            else { high = mid-1; }
         }
         return res;
     }
