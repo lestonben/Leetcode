@@ -36,4 +36,19 @@ public class q08_Find_First_and_Last_Position_Element {
         }
         return res;
     }
+
+    /*
+            Scenario: 5 7 7 8 8 10   Target: 8
+
+              First = (0+5)/2 -> 2
+                    = (3+5)/2 -> 4   (nums[mid] >= target) so high = mid-1
+                    = (3+3)/2 -> 3   (nums[mid] >= target) so high = mid-1
+              return as 3 < 2, so first = 3
+
+              Last = (0+5)/2 -> 2
+                   = (3+5)/2 -> 4    (nums[mid] <= target) so low = mid+1
+                   = (5+5)/2 -> 5
+              return as 5 < 4, so last = 4
+
+     */
 }
