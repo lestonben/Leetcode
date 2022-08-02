@@ -7,15 +7,14 @@ package Array;
 public class q03_Maximum_Subarray {
 
     public int maxSubArray(int[] nums) {
-        int max = 0;
+        int res = nums[0];
+        int[] dp = new int[nums.length];
+        dp[0] = nums[0];
 
-        for (int i=0; i<nums.length; i++) {
-            int curr = nums[i];
-            for (int j=i+1; j<nums.length; j++) {
-                curr += nums[j];
-                max = Math.max(max, curr);
-            }
+        for (int i=1; i<nums.length; i++) {
+            dp[i] = nums[i] + Math.max(dp[i-1], 0);
+            res = Math.max(res, dp[i]);
         }
-        return max;
+        return res;
     }
 }
