@@ -14,7 +14,7 @@ public class q06_Find_All_Anagrams_in_a_String {
         Map<Character, Integer> map = new HashMap<>();
         for (char c: t.toCharArray()) { map.put(c, map.getOrDefault(c,0)+1); }
 
-        int end = 0, start = 0, counter = t.length();
+        int end = 0, start = 0, counter = map.size();
         while (end < s.length()) {
             char c = s.charAt(end);
             if (map.containsKey(c)) {
