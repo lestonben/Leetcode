@@ -12,15 +12,13 @@ public class q07_Subarray_Product_Less_Than_K {
 
     public static int numSubArrayProductLessThanK(int[] nums, int k) {
         int count = 0;
-        int start = 0, end = 0, temp = 1;
-
-        while (end < nums.length) {
+        int start = 0, temp = 1;
+        for (int end=0; end<nums.length; end++) {
             temp *= nums[end];
             while (end >= start && temp >= k) {
                 temp /= nums[start++];
             }
             count += end-start+1;
-            end++;
         }
         return count;
     }
