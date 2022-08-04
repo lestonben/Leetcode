@@ -4,8 +4,6 @@ package Tree;
     https://leetcode.com/problems/invert-binary-tree/
  */
 
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.Stack;
 
 public class q01_Invert_Binary_Tree {
