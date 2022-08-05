@@ -8,15 +8,15 @@ import java.util.Stack;
 
 public class q01_Invert_Binary_Tree {
 
-    public q00_TreeNode invertTree(q00_TreeNode root) {
+    public TreeNode invertTree(TreeNode root) {
         if (root == null) { return null; }
 
-        Stack<q00_TreeNode> stack = new Stack<>();
+        Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
 
         while (!stack.isEmpty()) {
-            q00_TreeNode temp = stack.pop();
-            q00_TreeNode left = temp.left;
+            TreeNode temp = stack.pop();
+            TreeNode left = temp.left;
             temp.left = temp.right;
             temp.right = left;
 
