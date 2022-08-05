@@ -1,5 +1,9 @@
 package Tree;
 
+/*
+    https://leetcode.com/problems/diameter-of-binary-tree/
+ */
+
 public class q03_Diameter_of_Binary_Tree {
 
     int max = 0;
@@ -16,6 +20,17 @@ public class q03_Diameter_of_Binary_Tree {
         int right = maxDepth(root.right);
 
         max = Math.max(max, left+right);
-        return Math.max(left, right)+1;
+        return 1 + Math.max(left, right);
     }
 }
+
+/*
+    Find the longest path from the tree.
+               1
+             /   \
+            2     3
+           / \
+          4   5
+
+     Output: 3 edge(s) [4 -> 2 -> 1 -> 3] or [5 -> 2 -> 1 -> 3]
+ */
